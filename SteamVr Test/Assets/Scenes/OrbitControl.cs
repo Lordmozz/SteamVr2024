@@ -22,12 +22,13 @@ public class OrbitController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        this.transform.RotateAround(orbitPivot.position,Vector3.up,orbitSpeed * Time.deltaTime);
+        this.transform.RotateAround(orbitPivot.position, Vector3.up ,orbitSpeed * Time.deltaTime);
         this.transform.Rotate(Vector3.up, rotationSpeed * Time.deltaTime);
     }
-
+    
     private void FixedUpdate()
     {
         // up to 50fps
     }
 }
+ 
